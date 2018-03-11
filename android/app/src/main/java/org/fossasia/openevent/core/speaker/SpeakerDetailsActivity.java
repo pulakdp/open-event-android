@@ -303,7 +303,6 @@ public class SpeakerDetailsActivity extends BaseActivity implements AppBarLayout
     }
 
 
-    //TODO: Workaround. Needs fix during implementation of RealmLiveData
     @Override
     protected void onResume() {
         super.onResume();
@@ -316,6 +315,7 @@ public class SpeakerDetailsActivity extends BaseActivity implements AppBarLayout
 
         gridLayoutManager.setSpanCount(spanCount);
 
+        //TODO: Workaround. Needs fix during implementation of RealmLiveData
         loadData();
     }
 
