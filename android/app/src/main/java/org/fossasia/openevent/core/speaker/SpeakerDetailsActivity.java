@@ -296,7 +296,6 @@ public class SpeakerDetailsActivity extends BaseActivity implements AppBarLayout
         });
     }
 
-    //TODO: Workaround. Needs fix during implementation of RealmLiveData
     @Subscribe
     public void onBookmarksChanged(BookmarkChangedEvent bookmarkChangedEvent) {
         Timber.d("Bookmarks Changed");
@@ -304,6 +303,7 @@ public class SpeakerDetailsActivity extends BaseActivity implements AppBarLayout
     }
 
 
+    //TODO: Workaround. Needs fix during implementation of RealmLiveData
     @Override
     protected void onResume() {
         super.onResume();
