@@ -296,6 +296,7 @@ public class SpeakerDetailsActivity extends BaseActivity implements AppBarLayout
         });
     }
 
+    //TODO: High Priority: Remove event bus pattern
     @Subscribe
     public void onBookmarksChanged(BookmarkChangedEvent bookmarkChangedEvent) {
         Timber.d("Bookmarks Changed");
